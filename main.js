@@ -9,16 +9,26 @@ function myfunction() {
     }
 }
 
-function validate() {
-    var password = document.getElementById("pass");
-    var length = document.getElementById("length");
+var password = document.getElementById("pass");
+var passCheck = document.getElementById("error");
 
-    if (password.Value.length >= 8) {
-        alert("Login successful");
-        return false;
-    }
-    else {
-        alert("Login failed");
-    }
+function validate() {
+
+     if (password.value.length <= 8) {
+			// alert("Password too short")
+			passCheck.innerHTML = "password shouldnt be less than 8 characters"
+		}
+		else {
+			passCheck.innerHTML = "Thank you for loging in"
+		}
 }
- 
+
+var loginform = document.getElementById("pop-upform");
+
+function openForm() {
+	loginform.classList.add("open-form")
+}
+
+function closeForm() {
+	loginform.classList.remove("open-form")
+}

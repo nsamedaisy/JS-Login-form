@@ -8,19 +8,31 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 </b>
 <body>
-    <div class="form">
+	<header>
+		<h3 class="logo">Fill and Win</h3>
+		<nav class="navigation">
+			<a href ="#">Home</a>
+			<a href ="#">About</a>
+			<a href ="#">Service</a>
+			<a href ="#">Contact</a>
+			<button class="btnlogin" id="login" onclick="openForm()">LOGIN</button>
+		</nav>
+	</header>
+
+    <div class="form" id="pop-upform">
       <h2>LOGIN</h2>
       <p>Username;</p>
       <input class="box" type="text" name="" placeholder="name">
       <p>Password;</p>
 			<div class="flex">
 					<input class="box" type="text" name="" placeholder="input-password" id="pass">
+					<p id="error"></p>
           <input type="checkbox" onclick="myfunction()">
-        <button class="submit" type="submit" name="" value="LOGIN" onclick="validate()">LOGIN</button>
+        <button class="submit" type="submit" name="" value="LOGIN" onclick="validate()">Submit</button>
 			</div> 
     </div>
 		<div>
-			<p id="length"></p>
+			
 		</div>
 
 		<script src="./main.js"></script>
