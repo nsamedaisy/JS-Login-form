@@ -1,2 +1,61 @@
+body {
+	background-image: url("../images/forest.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	background-position: center;
+	object-fit: cover;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.form {
+	background-color: #a2c541a9;
+	width: 50%;
+	margin: auto;
+	height: 50vh;
+	color: #331d01;
+	padding: 3px 0 10px 0;
+	font-size: 18px;
+	margin-top: 35%;
+	border-radius: 5px;
+	position: relative;
+}
+
+.form h2 {
+	color: #163701;
+	font-size: 35px;
+	text-align: center;
+}
+
+.form p {
+	text-align: left;
+	padding-left: 45px;
+}
+
+.box {
+	padding: 8px;
+	border-radius: 3px;
+	border-style: none;
+	width: 70%;
+	text-align: center;
+	margin-left: 50px;
+	margin-bottom: 15px;
+}
 
 
+.flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.submit {
+	width: 25%;
+	padding: 10px;
+	margin: auto;
+	margin-top: 40px;
+	border-radius: 3px;
+	border-style: none;
+	color: white;
+	background-color: #163701;
+	cursor: pointer;
+}
